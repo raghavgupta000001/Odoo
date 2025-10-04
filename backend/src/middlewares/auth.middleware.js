@@ -8,11 +8,11 @@ export const verifyJwt = asyncHandler(async(req,res,next)=>{
         if(!token){
             throw new ApiError(401,"Unauthorised Access")
         }
-        const decodedToken = jwt.verify(token,process.env.ACCESS_TOKEN_SECRET)
+        const decodedToken = jwt.verify(token,process.env.JWT_SECRET)
         if(!decodedToken){
             throw new ApiError(401,"Token is expired or used")
         }
-        const user = await User.findById(decodedToken?._id).select("-password -refreshToken")
+        const user = await User.findById(decodedToken?.id).select("-password -refreshToken")
         if(!user){
             throw new ApiError(400,"Invalid Access Token")
         }

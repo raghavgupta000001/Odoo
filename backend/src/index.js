@@ -1,6 +1,7 @@
 import dotenv from 'dotenv'
 import {app} from './app.js'
 import connect from './db/index.js'
+
 dotenv.config()
 
 connect().then(()=>{
