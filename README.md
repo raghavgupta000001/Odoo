@@ -17,6 +17,6 @@ I Have Created A Employee SaaS Management Software . Equipped With Admin , Emplo
 
 ## 🚀 Deployment Link (Mandatory)
 Live Project Link:  
-https://odoo-khaki.vercel.app/login
+https://odoo-khaki.vercel.app/
 
 ---
