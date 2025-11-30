@@ -18,5 +18,5 @@ I Have Created A Employee SaaS Management Software . Equipped With Admin , Emplo
 ## 🚀 Deployment Link (Mandatory)
 Live Project Link:  
 https://odoo-beta.vercel.app/
-
+https://jkj-delta.vercel.app/
 ---
